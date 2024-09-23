@@ -24,7 +24,7 @@ export class AppComponent {
       {id: 4, firstName: "Jane", lastName: "Doe", department: "Programming", isAdmin: true}
     ]
   //Function that gets called from our onclick. Takes in an
-  //arguement ofa variable called user, which is type User and returns void
+  //argument ofa variable called user, which is type User and returns void
   toggleAdminStatus(user: User): void {
     user.isAdmin = !user.isAdmin;
   }
