@@ -3,7 +3,7 @@ import {User} from "../Shared/Models/user";
 import {StudentDetailComponent} from "../student-detail/student-detail.component";
 import {NgForOf} from "@angular/common";
 import {StudentService} from "../services/student.service";
-import {observable} from "rxjs";
+
 
 @Component({
   selector: 'app-student-list',
@@ -18,7 +18,7 @@ export class StudentListComponent implements OnInit{
   userList:User[] = [];
 
   constructor(private studentService : StudentService) { //this is like we are just calling our services
-    //this is going to be sued for dependency injection
+    //this is going to be used for dependency injection
   }
 
   ngOnInit() {
