@@ -3,12 +3,13 @@ import {User} from "../Shared/Models/user";
 import {StudentDetailComponent} from "../student-detail/student-detail.component";
 import {NgForOf} from "@angular/common";
 import {StudentService} from "../services/student.service";
+import {RouterLink} from "@angular/router";
 
 
 @Component({
   selector: 'app-student-list',
   standalone: true,
-  imports: [NgForOf, NgForOf, StudentDetailComponent,],
+  imports: [NgForOf, NgForOf, StudentDetailComponent, RouterLink,],
   templateUrl: './student-list.component.html',
   styleUrl: './student-list.component.css'
 })
