@@ -1,1 +1,38 @@
-<p>modify-student works!</p>
+<!--Reactive form-->
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+
+  <!--ID-->
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="number" id="id" formControlName="id">
+  </div>
+
+  <!--first name-->
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" formControlName="firstName">
+  </div>
+
+  <!--Last name-->
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" formControlName="lastName">
+  </div>
+
+  <!--department-->
+  <div class="form-group">
+    <label for="department">Department</label>
+    <input type="text" id="department" formControlName="department">
+  </div>
+
+  <!--admin-->
+  <div class="form-group">
+    <label for="isAdmin">First Name</label>
+    <input type="text" id="isAdmin" formControlName="isAdmin">
+  </div>
+
+  <button type="submit">Update student</button>
+  <button type="button" (click)="onSubmit()">Add Student</button>
+  <button type="button" (click)="onDelete()">Delete Student</button>
+
+</form>
