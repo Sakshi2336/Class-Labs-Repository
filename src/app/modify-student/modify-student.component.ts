@@ -49,7 +49,7 @@ export class ModifyStudentComponent implements OnInit{
     const id = Number(this.route.snapshot.paramMap.get('id'));
     if (id) {
       //if the ID is valid, the StudentService is used to fetch the student's details by calling the getStudentById method
-      this.studentService.getStudentById(id).subscribe(student => {
+      this.studentService.getStudentById(+id).subscribe(student => {
         if (student) {
           //If the student object is valid, the patchValue method of the reactive form
           // (studentForm) is called to populate the form with the student's data The patchValue method updates the form controls with the
