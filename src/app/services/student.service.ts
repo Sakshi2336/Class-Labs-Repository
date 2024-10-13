@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';  //This decorator allows Angular to inject this service into other components or services.
 import {User} from "../Shared/Models/user";
 import {userList} from "../Shared/mockStudent.data";
 import {Observable, of} from "rxjs";

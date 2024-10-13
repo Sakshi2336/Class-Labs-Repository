@@ -14,7 +14,7 @@ import {StudentService} from "../services/student.service";
 })
 export class StudentListComponent implements OnInit{
 
-  //I still want a local copy of the suerlist
+  //I still want a local copy of the user list
   userList:User[] = [];
 
   constructor(private studentService : StudentService) { //this is like we are just calling our services

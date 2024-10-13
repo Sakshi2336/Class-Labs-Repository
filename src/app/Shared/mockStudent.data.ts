@@ -5,6 +5,7 @@ import {User} from "./Models/user";
 
 //then we need to create a mock data array of type User and export it so it is available to otehr files
 
+//we put export word here so other service or components can use it
 export const userList : User[] =[
     //Copied from app.component.ts
     {id: 1, firstName: "Matt", lastName: "Haug", department: "Programming", isAdmin: false},
